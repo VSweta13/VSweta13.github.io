@@ -1,4 +1,6 @@
-// Select the skills section and all progress bars
+// =====================================
+// 1. Skills Progress Bar Animation
+// =====================================
 const skillsSection = document.querySelector(".skills-section");
 const progressBars = document.querySelectorAll(".progress");
 
@@ -20,6 +22,9 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// =====================================
+// 2. Scroll Reveal Animations
+// =====================================
 const animatedElements = document.querySelectorAll(
   ".fade-in, .slide-in-left, .slide-in-right, .slide-in-up, .zoom-in, .flip-in, .blur-in, .pop-in"
 );
@@ -40,3 +45,13 @@ function revealOnScroll() {
 
 window.addEventListener("scroll", revealOnScroll);
 revealOnScroll();
+
+// =====================================
+// 3. Card Flip on Mobile (Tap to flip)
+// =====================================
+document.querySelectorAll(".card").forEach((card) => {
+  card.addEventListener("click", () => {
+    // Toggle flip on tap
+    card.classList.toggle("flip");
+  });
+});
