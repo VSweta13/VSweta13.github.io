@@ -188,8 +188,10 @@ header h3 {
   transition: transform 0.8s;
 }
 
-.card:hover {
-  transform: rotateY(180deg);
+@media (min-width: 992px) {
+  .card:hover {
+    transform: rotateY(180deg);
+  }
 }
 
 .card-front,
@@ -560,6 +562,13 @@ footer span {
 /* 📱 MOBILE DEVICES (max-width: 767px) */
 /* ============================================= */
 @media (max-width: 767px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
   header {
     flex-direction: column;
     height: auto;
@@ -630,6 +639,10 @@ footer span {
     height: 400px;
   }
 
+  .card.flip {
+    transform: rotateY(180deg);
+  }
+
   .skills-section h1,
   .about h1,
   .certificate-section h1,
@@ -647,6 +660,12 @@ footer span {
     font-size: 18px;
     width: 90%;
     margin: 80px auto 30px;
+  }
+
+  .skills-section .app-section {
+    margin: 0 auto;
+    width: 90%;
+    padding: 20px;
   }
 
   .apps ul {
@@ -681,11 +700,10 @@ footer span {
   .certificates {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 1.5rem;
     justify-items: center;
     align-items: center;
-    padding: 0;
-    margin: 0;
+    margin: 0 0.5px 0 0.5px;
+    padding: 20px;
   }
 
   .cert {
@@ -713,23 +731,30 @@ footer span {
   .social-container {
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
   }
 
   .social {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
   }
 
   footer div {
-    flex-direction: row;
-    margin: 15px 30px;
+    flex-direction: column;
   }
 }
 
 /* ============================================= */
-/* 💻 TABLETS (min-width: 768px) and (max-width: 991px) */
+/* 💻 TABLETS (min-width: 768px) and (max-width: 1024px) */
 /* ============================================= */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
   header {
     flex-direction: column;
     height: auto;
@@ -774,13 +799,19 @@ footer span {
   }
 
   .home-image img {
+    margin-left: 4vw;
     width: 250px;
     height: 250px;
     transform: scale(1);
   }
 
+  .about {
+    margin: 1.5rem;
+  }
+
   .about p {
     text-align: center;
+    margin-left: 4vw;
   }
 
   .card-container {
@@ -794,6 +825,10 @@ footer span {
     height: 400px;
   }
 
+  .card.flip {
+    transform: rotateY(180deg);
+  }
+
   .skills-section h1,
   .about h1,
   .certificate-section h1,
@@ -804,12 +839,19 @@ footer span {
 
   .progress-bar {
     width: 80%;
+    margin: 2rem;
   }
 
   .skills-section p {
     font-size: 18px;
     width: 90%;
     margin: 80px auto 30px;
+  }
+
+  .skills-section .app-section {
+    margin: 0 auto;
+    width: 90%;
+    padding: 20px;
   }
 
   .apps ul {
@@ -842,8 +884,12 @@ footer span {
   }
 
   .certificates {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
     align-items: center;
+    margin: 0 0.5px 0 0.5px;
+    padding: 20px;
   }
 
   .cert {
@@ -854,27 +900,32 @@ footer span {
 
   .cert h3 {
     font-size: 1.5rem;
-    margin: 0;
+    margin: 20px 0 20px 0;
     padding: 0;
+  }
+
+  .cert p {
+    margin-top: 10px;
   }
 
   .contact-section p {
     width: 90%;
     font-size: 18px;
+    margin-left: 4vw;
   }
 
   .social-container {
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
   }
 
   .social {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
   }
 
   footer div {
-    flex-direction: row;
-    margin: 15px 30px;
+    flex-direction: column;
   }
 }
