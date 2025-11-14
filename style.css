@@ -6,22 +6,24 @@
 }
 
 body {
-  background: linear-gradient(to right, #07038f, #167fd6);
+  background: linear-gradient(to right, #010027, #02467d);
   color: #ffffff;
 }
 
+/* Laptops (min-width: 992px) and (max-width: 1199px) */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #0f0467;
-  height: 110px;
+  background: #010027;
+  height: 15vh;
+  padding: 0 40px 0 20px;
 }
 
 header h3 {
   font-family: Garamond, serif;
-  font-size: 2rem;
-  margin-left: 50px;
+  font-size: 1.9rem;
+  margin-left: 4vw;
   margin-bottom: 10px;
 }
 
@@ -40,7 +42,7 @@ header h3 {
 
 .nav li a {
   font-family: Garamond, serif;
-  font-size: 20px;
+  font-size: 1.3rem;
   text-decoration: none;
   color: #ffffff;
   font-weight: 600;
@@ -77,14 +79,16 @@ header h3 {
   justify-content: space-between;
   justify-items: center;
   align-items: center;
-  height: 600px;
+  height: 80vh;
+  margin-left: 4vw;
 }
 
 .home h1 {
   font-family: Lucida, monospace;
-  font-size: 2.5rem;
+  font-size: 1.3rem;
+  margin: 1rem 6vw 2rem;
   color: white;
-  margin-left: 90px;
+  margin-left: 40px;
 }
 
 .home span {
@@ -98,14 +102,14 @@ header h3 {
   font-family: Monaco, monospace;
   font-size: 1.5rem;
   color: #ffffff;
-  margin: 10px 90px 30px;
+  margin: 10px 4vw 30px 2.5vw;
 }
 
 .home .btn {
   display: inline-block;
-  margin-left: 90px;
-  padding: 1em 2em;
-  font-size: 16px;
+  padding: 0.8em 1.8em;
+  font-size: 0.9rem;
+  margin-left: 2.5vw;
   text-decoration: none;
   letter-spacing: 2.5px;
   font-weight: 900;
@@ -133,12 +137,13 @@ header h3 {
   flex: 1;
   display: flex;
   justify-content: center;
+  margin-right: 4vw;
 }
 
 .home-image img {
-  height: 400px;
-  width: 400px;
-  border-radius: 20% 50%;
+  width: 23vw;
+  height: 50vh;
+  border-radius: 50% 50%;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   object-fit: cover;
   object-position: center;
@@ -148,6 +153,7 @@ header h3 {
 /* About Me */
 .about {
   padding-top: 60px;
+  margin-left: 4vw;
 }
 
 .about h1 {
@@ -159,7 +165,7 @@ header h3 {
 .about p {
   margin: 50px 20px;
   display: block;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -174,8 +180,8 @@ header h3 {
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  width: 360px;
-  height: 450px;
+  width: 28vw;
+  height: 55vh;
   margin-bottom: 50px;
   position: relative;
   transform-style: preserve-3d;
@@ -190,7 +196,7 @@ header h3 {
 .card-back {
   width: 90%;
   height: 100%;
-  padding: 30px;
+  padding: 2vw;
   position: absolute;
   backface-visibility: hidden;
   display: flex;
@@ -227,6 +233,7 @@ header h3 {
 /* Skills */
 .skills-section {
   padding-top: 30px;
+  margin-left: 4vw;
 }
 
 .skills-section h1 {
@@ -239,14 +246,14 @@ header h3 {
   margin-left: 20px;
   color: #c6ffff;
   font-style: italic;
-  font-size: 25px;
+  font-size: 1.5rem;
 }
 
 .progress-bar {
   margin-left: 20px;
   margin-bottom: 30px;
-  width: 60%;
-  height: 30px;
+  width: 50%;
+  height: 4vh;
   background: #e0e0e0;
   border-radius: 30px;
   overflow: hidden;
@@ -304,32 +311,40 @@ header h3 {
 /* Applications */
 .skills-section p {
   font-family: "Times New Roman", Times, serif;
-  font-size: 25px;
+  font-size: 1.3rem;
+  width: 65%;
   margin: 150px auto 60px auto;
   text-align: center;
   justify-items: center;
-
-  width: 70%;
 }
 
-.skills-section .app-section {
+.app-section {
   display: block;
-  margin: 10px 20px;
-  padding: 20px;
+  margin: 0 50px 0 50px;
+  padding: 0;
   box-sizing: border-box;
-  width: 600;
+  width: 90%;
   border-radius: 30px;
   background-color: rgba(255, 255, 255, 0.372);
 }
 
+.apps ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
 .apps li {
-  width: 190px;
-  height: 170px;
+  width: 13vw;
+  height: 24vh;
   border-radius: 20px;
-  margin: 20px 20px 10px 60px;
+  margin: 2vh 2vw;
   background-color: rgba(42, 14, 184, 0.575);
   list-style: none;
-  font-size: 15px;
+  font-size: 1rem;
   font-style: oblique;
   font-family: "Courier New", Courier, monospace;
   position: relative;
@@ -337,11 +352,12 @@ header h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .apps li img {
-  width: 110px;
-  height: 110px;
+  width: 7vw;
+  height: 15vh;
   margin: 10px;
   position: relative;
   text-align: center;
@@ -349,7 +365,8 @@ header h3 {
 
 /* Certificates and Achievements */
 .certificate-section {
-  margin: 80px 20px;
+  padding: 0;
+  margin-right: 30px;
 }
 
 .certificate-section h1 {
@@ -358,29 +375,30 @@ header h3 {
 }
 
 .certificates {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 5px;
-  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  padding: 0;
+  margin: 0.5rem;
 }
 
 .cert {
-  margin: 10px auto 50px 20px;
+  margin: 10px auto 50px auto;
   padding: 10px;
   text-align: center;
   align-content: center;
-  width: 400px;
+  width: 30vw;
   border: #000 solid;
   background: rgba(0, 0, 0, 0.605);
 }
 
 .cert img {
-  width: 350px;
+  width: 25vw;
 }
 
 .cert h3 {
-  font-size: 17px;
+  font-size: 1rem;
   color: #54d4ff;
   margin-top: 10px;
   margin-bottom: 8px;
@@ -409,8 +427,8 @@ header h3 {
 
 .contact-section p {
   margin-bottom: 40px;
-  width: 65%;
-  font-size: 20px;
+  width: 70%;
+  font-size: 1.1rem;
   line-height: 25px;
 }
 
@@ -425,12 +443,12 @@ header h3 {
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
-  width: 90px;
-  height: 90px;
+  width: 8vw;
+  height: 8vh;
   background: #333;
   color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.15rem;
   font-weight: bold;
   border-radius: 50px;
   transition: width 0.3s ease-in-out;
@@ -484,7 +502,7 @@ header h3 {
 /* Footer */
 footer {
   background: #000000b1;
-  padding: 50px;
+  padding: 5vh 0;
   text-align: center;
   align-items: center;
 }
@@ -496,13 +514,14 @@ footer h4 {
 
 footer div {
   display: inline-block;
-  margin: 60px 60px 10px;
-  font-size: 17px;
+  margin: 30px 60px 0;
+  font-size: 1rem;
 }
 
 footer span {
   font-weight: bolder;
   display: block;
+  margin-top: 30px;
 }
 
 /* ANIMATIONS */
@@ -535,4 +554,327 @@ footer span {
 .pop-in.visible {
   opacity: 1;
   transform: scale(1.13);
+}
+
+/* ============================================= */
+/* 📱 MOBILE DEVICES (max-width: 767px) */
+/* ============================================= */
+@media (max-width: 767px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 0;
+  }
+
+  header h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0 1.5rem;
+  }
+
+  .nav ul {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .nav li {
+    margin: 0 1.5rem;
+  }
+
+  .home {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    margin: 1.5rem;
+  }
+
+  .home h1 {
+    font-size: 2rem;
+    margin: 20px 0;
+  }
+
+  .home h3 {
+    font-size: 1.2rem;
+    margin: 10px 0 20px;
+  }
+
+  .home .btn {
+    margin: 2rem auto;
+  }
+
+  .home-image img {
+    margin-left: 4vw;
+    width: 250px;
+    height: 250px;
+    transform: scale(1);
+  }
+
+  .about {
+    margin: 1.5rem;
+  }
+
+  .about p {
+    text-align: center;
+    margin-left: 4vw;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .card {
+    width: 90%;
+    height: 400px;
+  }
+
+  .skills-section h1,
+  .about h1,
+  .certificate-section h1,
+  .contact-section h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .progress-bar {
+    width: 80%;
+    margin: 2rem;
+  }
+
+  .skills-section p {
+    font-size: 18px;
+    width: 90%;
+    margin: 80px auto 30px;
+  }
+
+  .apps ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    justify-items: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .apps li {
+    width: 30vw;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .apps li img {
+    width: 40%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+
+  .certificates {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    justify-items: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .cert {
+    width: 90%;
+    margin: 20px auto;
+    padding-top: 20px;
+  }
+
+  .cert h3 {
+    font-size: 1.5rem;
+    margin: 20px 0 20px 0;
+    padding: 0;
+  }
+
+  .cert p {
+    margin-top: 10px;
+  }
+
+  .contact-section p {
+    width: 90%;
+    font-size: 18px;
+    margin-left: 4vw;
+  }
+
+  .social-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .social {
+    width: 70px;
+    height: 70px;
+  }
+
+  footer div {
+    flex-direction: row;
+    margin: 15px 30px;
+  }
+}
+
+/* ============================================= */
+/* 💻 TABLETS (min-width: 768px) and (max-width: 991px) */
+/* ============================================= */
+@media (min-width: 768px) and (max-width: 991px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 0;
+  }
+
+  header h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0 1.5rem;
+  }
+
+  .nav ul {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .nav li {
+    margin: 0 1.5rem;
+  }
+
+  .home {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    margin: 1.5rem;
+  }
+
+  .home h1 {
+    font-size: 2rem;
+    margin: 20px 0;
+  }
+
+  .home h3 {
+    font-size: 1.2rem;
+    margin: 10px 0 20px;
+  }
+
+  .home .btn {
+    margin: 2rem auto;
+  }
+
+  .home-image img {
+    width: 250px;
+    height: 250px;
+    transform: scale(1);
+  }
+
+  .about p {
+    text-align: center;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .card {
+    width: 90%;
+    height: 400px;
+  }
+
+  .skills-section h1,
+  .about h1,
+  .certificate-section h1,
+  .contact-section h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .progress-bar {
+    width: 80%;
+  }
+
+  .skills-section p {
+    font-size: 18px;
+    width: 90%;
+    margin: 80px auto 30px;
+  }
+
+  .apps ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    justify-items: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .apps li {
+    width: 30vw;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .apps li img {
+    width: 40%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+
+  .certificates {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cert {
+    width: 90%;
+    margin: 20px auto;
+    padding-top: 20px;
+  }
+
+  .cert h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contact-section p {
+    width: 90%;
+    font-size: 18px;
+  }
+
+  .social-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .social {
+    width: 70px;
+    height: 70px;
+  }
+
+  footer div {
+    flex-direction: row;
+    margin: 15px 30px;
+  }
 }
