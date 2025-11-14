@@ -188,10 +188,8 @@ header h3 {
   transition: transform 0.8s;
 }
 
-@media (min-width: 992px) {
-  .card:hover {
-    transform: rotateY(180deg);
-  }
+.card:hover {
+  transform: rotateY(180deg);
 }
 
 .card-front,
@@ -639,8 +637,13 @@ footer span {
     height: 400px;
   }
 
-  .card.flip {
-    transform: rotateY(180deg);
+  .card-back {
+    width: 90%;
+    height: 100%;
+    padding-left: 6vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .skills-section h1,
@@ -823,10 +826,6 @@ footer span {
   .card {
     width: 90%;
     height: 400px;
-  }
-
-  .card.flip {
-    transform: rotateY(180deg);
   }
 
   .skills-section h1,
