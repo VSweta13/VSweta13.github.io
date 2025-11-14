@@ -880,16 +880,24 @@ footer span {
   }
 
   .card-container {
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
     justify-items: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
   }
 
   .card {
     width: 90%;
     height: 400px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    margin-bottom: 20px;
   }
 
+  /* Tap flip (JS toggles .flip) */
   .card.flip {
     transform: rotateY(180deg);
   }
@@ -901,6 +909,7 @@ footer span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transform: rotateY(180deg);
   }
 
   .skills-section h1,
@@ -930,7 +939,7 @@ footer span {
 
   .apps ul {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     justify-items: center;
     align-items: center;
@@ -939,8 +948,8 @@ footer span {
   }
 
   .apps li {
-    width: 30vw;
-    height: 30vw;
+    width: 20vw;
+    height: 20vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -995,8 +1004,8 @@ footer span {
   }
 
   .social {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
   }
 
   footer div {
